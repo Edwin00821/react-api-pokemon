@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import getPokemonData from "./services/getPokemonData";
-import ListOfPokemons from "./components/ListOfPokemons";
+import { getPokemonData } from './services/getPokemonData'
+import ListOfPokemons from './components/ListOfPokemons'
 
 function App() {
   const [pokemons, setPokemoms] = useState([]);
@@ -12,9 +12,9 @@ function App() {
 
 
   return (
-    <div className="App">
-      <h1 className="text-3xl text-black">Pokedex</h1>
-      <h2 className="text-black">Astudillo Perez Edwin Uriel</h2>
+    <div className="App ">
+      <h1 className="text-3xl text-white">Pokedex</h1>
+      <h2 className="text-white">Astudillo Perez Edwin Uriel</h2>
       <ListOfPokemons pokemons={pokemons} />
     </div>
   );
