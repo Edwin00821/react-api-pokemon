@@ -7,6 +7,7 @@ export default function ListOfPokemons({ pokemons }) {
       {
       pokemons.map(({abilities, height, id, name, img, stats, types, weight}) => {
         return <PokemonCard 
+        key={id}
         abilities={abilities}
         height={height}
         id={id}
