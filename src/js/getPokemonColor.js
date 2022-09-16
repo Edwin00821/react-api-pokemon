@@ -1,46 +1,49 @@
-export default function getPokemonColor (type) {
-    switch (type) {
-        case "normal":
-        return "gray-700";
-        case "fighting":
-        return "red-600";
-        case "flying":
-        return "blue-300";
-        case "poison":
-        return "purple-600";
-        case "ground":
-        return "yellow-500";
-        case "rock":
-        return "yellow-700";
-        case "bug":
-        return "green-600";
-        case "ghost":
-        return "purple-800";
-        case "steel":
-        return "gray-500";
-        case "fire":
-        return "red-500";
-        case "water":
-        return "blue-500";
-        case "grass":
-        return "green-500";
-        case "electric":
-        return "yellow-300";
-        case "psychic":
-        return "pink-500";
-        case "ice":
-        return "blue-200";
-        case "dragon":
-        return "purple-400";
-        case "dark":
-        return "gray-800";
-        case "fairy":
-        return "pink-300";
-        case "unknown":
-        return "gray-400";
-        case "shadow":
-        return "gray-700";
-        default:
-        return "#68A090";
-    }
+import { TYPES } from './variables'
+
+export function getPokemonBgColor(type) {
+  if (type === undefined) return '[#68A090]'
+  if (type === TYPES.NORMAL) return 'bg-gray-700'
+  if (type === TYPES.FIGHTING) return 'bg-red-600'
+  if (type === TYPES.FLYING) return 'bg-blue-300'
+  if (type === TYPES.POISON) return 'bg-purple-600'
+  if (type === TYPES.GROUND) return 'bg-yellow-500'
+  if (type === TYPES.ROCK) return 'bg-yellow-700'
+  if (type === TYPES.BUG) return 'bg-green-600'
+  if (type === TYPES.GHOST) return 'bg-purple-800'
+  if (type === TYPES.STEEL) return 'bg-gray-500'
+  if (type === TYPES.FIRE) return 'bg-red-500'
+  if (type === TYPES.WATER) return 'bg-blue-500'
+  if (type === TYPES.GRASS) return 'bg-green-500'
+  if (type === TYPES.ELECTRIC) return 'bg-yellow-300'
+  if (type === TYPES.PSYCHIC) return 'bg-pink-500'
+  if (type === TYPES.ICE) return 'bg-blue-200'
+  if (type === TYPES.DRAGON) return 'bg-purple-400'
+  if (type === TYPES.DARK) return 'bg-gray-800'
+  if (type === TYPES.FAIRY) return 'bg-pink-300'
+  if (type === TYPES.UNKNOWN) return 'bg-gray-400'
+  if (type === TYPES.SHADOW) return 'bg-gray-700'
+}
+
+export function getPokemonTxtColor(type) {
+  if (type === undefined) return '[#68A090]'
+  if (type === TYPES.NORMAL) return 'text-gray-700'
+  if (type === TYPES.FIGHTING) return 'text-red-600'
+  if (type === TYPES.FLYING) return 'text-blue-300'
+  if (type === TYPES.POISON) return 'text-purple-600'
+  if (type === TYPES.GROUND) return 'text-yellow-500'
+  if (type === TYPES.ROCK) return 'text-yellow-700'
+  if (type === TYPES.BUG) return 'text-green-600'
+  if (type === TYPES.GHOST) return 'text-purple-800'
+  if (type === TYPES.STEEL) return 'text-gray-500'
+  if (type === TYPES.FIRE) return 'text-red-500'
+  if (type === TYPES.WATER) return 'text-blue-500'
+  if (type === TYPES.GRASS) return 'text-green-500'
+  if (type === TYPES.ELECTRIC) return 'text-yellow-300'
+  if (type === TYPES.PSYCHIC) return 'text-pink-500'
+  if (type === TYPES.ICE) return 'text-blue-200'
+  if (type === TYPES.DRAGON) return 'text-purple-400'
+  if (type === TYPES.DARK) return 'text-gray-800'
+  if (type === TYPES.FAIRY) return 'text-pink-300'
+  if (type === TYPES.UNKNOWN) return 'text-gray-400'
+  if (type === TYPES.SHADOW) return 'text-gray-700'
 }
