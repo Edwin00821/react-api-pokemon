@@ -2,7 +2,7 @@
   "name": "react-api-pokemon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Edwin00821.github.io/react-api-pokemon",
+  "homepage": "https://edwin00821.github.io/react-api-pokemon",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predelpoy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
